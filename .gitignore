@@ -1,0 +1,9 @@
+
+# Docker Compose do Airflow
+docker-compose
+# Arquivo de Configuracao
+config/
+# Pasta de Versionamento
+.venv/
+# Pasta de Logs
+logs/
