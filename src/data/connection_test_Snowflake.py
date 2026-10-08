@@ -14,13 +14,13 @@ def connection_snowflake() -> Optional[SnowflakeConnection]:
         password=os.getenv('Password'),
         account=os.getenv('Account'),
         warehouse=os.getenv('Warehouse'),
-        database=os.getenv('Database'),
+        database=os.getenv('Database_Source'),
         schema=os.getenv('Schema')
         )
 
         return conn
 
-    except :
-
+    except Exception as e:
+        print(f"Erro crítico ao ligar ao Snowflake: {e}")
         return False
 
