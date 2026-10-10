@@ -64,3 +64,17 @@ query_snapshot = 'select ' \
 ',BENCHMARK_SOURCE'
 ',BENCHMARK_LICENSE' \
 'from TB_SNAPSHOT'
+
+query_llm_beachmark = 'select ' \
+',MODEL_NAME'
+',ORGANIZATION'
+',LICENSE'
+',RATING'
+',RATING_LOWER'
+',RATING_UPPER'
+',VARIANCE'
+',VOTE_COUNT'
+',RANK'
+',CATEGORY'
+',LEADERBOARD_PUBLISH_DATE' \
+'from'

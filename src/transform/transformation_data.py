@@ -1,7 +1,4 @@
 import pandas as pd
-from extract.extract_data import search_data
-from data.connection_test import connection_snowflake
-from data.sql_query import query_crosswalk,query_dictionary
 
 def header_adjustment(df:pd.DataFrame) -> pd.DataFrame:
 
@@ -9,8 +6,15 @@ def header_adjustment(df:pd.DataFrame) -> pd.DataFrame:
     df = df.loc[1:].reset_index(drop=False)
     return df
 
-def drop_columns_price(df:pd.DataFrame):
+def drop_columns_price(df:pd.DataFrame) -> pd.DataFrame:
 
     df = df.drop(columns=['BENCHMARK_SOURCE','BENCHMARK_LICENSE','SCENARIO_10K_1K_USD','ARENA_RATING_PER_USD_10K_1K'])
     return df
 
+def drop_columns_snapshot(df:pd.Dataframe) -> pd.DataFrame:
+    df = df.drop(columns=['BENCHMARK_SOURCE','BENCHMARK_LICENSE'])
+    return df
+
+def drop_columns_price_snapshot(df:pd.DataFrame) -> pd.DataFrame:
+    df = df.drpo(columns=['RETRIEVED_AT_ISO','SOURCE_URL','NOTES','IS_PROMOTIONAL','PRICE_BASIS'])
+    return df
