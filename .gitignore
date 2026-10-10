@@ -7,3 +7,5 @@ config/
 .venv/
 # Pasta de Logs
 logs/
+# Arquivo Gitignore
+.gitignore

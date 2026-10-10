@@ -18,3 +18,6 @@ def drop_columns_snapshot(df:pd.Dataframe) -> pd.DataFrame:
 def drop_columns_price_snapshot(df:pd.DataFrame) -> pd.DataFrame:
     df = df.drpo(columns=['RETRIEVED_AT_ISO','SOURCE_URL','NOTES','IS_PROMOTIONAL','PRICE_BASIS'])
     return df
+
+def drop_columns_llm_beachmark(df:pd.DataFrame) -> pd.DataFrame:
+    df.drop(columns=[''])
