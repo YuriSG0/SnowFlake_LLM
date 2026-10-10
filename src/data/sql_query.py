@@ -2,7 +2,7 @@ query_crosswalk = 'select ' \
 'c1,c2,c3,c4 ' \
 'from TB_CROSSWALK'
 
-query_dictionary = 'select' \
+query_dictionary = 'select ' \
 'c1,c2,c3,c4 ' \
 'from TB_DICTIONARY'
 
@@ -29,7 +29,7 @@ query_price = 'select ' \
 'from TB_PRICE'
 
 query_pricesnapshot = 'select ' \
-',COLUMN_NAME'
+'COLUMN_NAME'
 ',SNAPSHOT_DATE'
 ',PROVIDER'
 ',MODEL_ID'
@@ -55,7 +55,7 @@ query_pricesnapshot = 'select ' \
 'from TB_PRICESNAPSHOT'
 
 query_snapshot = 'select ' \
-',COLUMN_NAME'
+'COLUMN_NAME'
 ',SNAPSHOT_DATE'
 ',ARENA_LEADERBOARD_PUBLISH_DATE'
 ',N_JOINED_MODELS'
@@ -66,7 +66,7 @@ query_snapshot = 'select ' \
 'from TB_SNAPSHOT'
 
 query_llm_beachmark = 'select ' \
-',MODEL_NAME'
+'MODEL_NAME'
 ',ORGANIZATION'
 ',LICENSE'
 ',RATING'
@@ -76,5 +76,5 @@ query_llm_beachmark = 'select ' \
 ',VOTE_COUNT'
 ',RANK'
 ',CATEGORY'
-',LEADERBOARD_PUBLISH_DATE' \
-'from'
+',LEADERBOARD_PUBLISH_DATE ' \
+'from TB_LLM_BEACHMARK'
