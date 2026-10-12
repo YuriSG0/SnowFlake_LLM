@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 from sqlalchemy import create_engine 
 from sqlalchemy.engine import Engine
-from data.connect_SQL import connection_SQL
+from src.data.connect_SQL import connection_SQL
 from urllib.parse import quote_plus
 
 

@@ -11,7 +11,7 @@ def drop_columns_price(df:pd.DataFrame) -> pd.DataFrame:
     df = df.drop(columns=['BENCHMARK_SOURCE','BENCHMARK_LICENSE','SCENARIO_10K_1K_USD','ARENA_RATING_PER_USD_10K_1K'])
     return df
 
-def drop_columns_snapshot(df:pd.Dataframe) -> pd.DataFrame:
+def drop_columns_snapshot(df:pd.DataFrame) -> pd.DataFrame:
     df = df.drop(columns=['BENCHMARK_SOURCE','BENCHMARK_LICENSE'])
     return df
 

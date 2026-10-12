@@ -1,0 +1,31 @@
+# Controlo de Versões
+.git/
+.gitignore
+
+# Ambientes Virtuais
+.venv/
+venv/
+env/
+
+# Ficheiros Python Compilados e Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Ficheiros de Configuração Local e Segredos
+.env
+config/.env
+
+# Logs e Ficheiros Temporários
+logs/
+dbt.log
+*.log
+
+# Ficheiros de IDE (VS Code, etc.)
+.vscode/
+.idea/
+
+# Ficheiros de Sistema Operativo
+.DS_Store
+Thumbs.db
