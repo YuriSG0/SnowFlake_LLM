@@ -1,15 +1,14 @@
-# Pipeline Snowflake LLM Benchmark (Airflow)
+#Pipeline Snowflake LLM Benchmark (Airflow)
 
 Este projeto implementa um pipeline de dados orquestrado pelo **Apache Airflow** (TaskFlow API) em ambiente Docker. O objetivo principal é extrair dados de *benchmarking* de LLMs (Large Language Models) armazenados no **Snowflake**, aplicar transformações de limpeza através de *dataframes*, e recarregar os dados otimizados em tabelas finais.
 
 ## 🛠 Arquitetura e Tecnologias
-
 * **Orquestração:** Apache Airflow 2.7.1
 * **Infraestrutura:** Docker & Docker Compose (PostgreSQL, Redis, CeleryExecutor)
 * **Base de Dados / Data Warehouse:** Snowflake
 * **Linguagem Principal:** Python 3.8+
 
-## 📁 Estrutura do Projeto
+##📁 Estrutura do Projeto
 
 A estrutura de diretórios foi desenhada para separar claramente a orquestração (DAGs) da lógica de ETL (src):
 
